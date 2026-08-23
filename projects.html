@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/icon.svg" type="image/svg+xml">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>HOP · Web Developer</title>
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/Manrope-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container nav__container">
+    <a href="index.html" class="nav__logo">
+      <span>|</span>Hop</a>
+    <nav class="nav menu" data-menu>
+      <ul class="list-reset nav__btns">
+        <li data-menu-item>
+          <a href="about.html" class="nav__btns-item">Обо мне</a>
+        </li>
+        <li data-menu-item>
+          <a href="projects.html" class="nav__btns-item">Проекты</a>
+        </li>
+        <li data-menu-item>
+          <a href="contacts.html" class="nav__btns-item">Контакты</a>
+        </li>
+      </ul>
+      <p class="nav__phone contacts__name">+7 901 109-63-59</p>
+    </nav>
+    <div class="nav__buttons">
+      <button class="btn-reset nav__btn theme-toggle">
+        <svg class="nav__svg logo">
+          <use xlink:href="img/sprite.svg#moon-sun"></use>
+        </svg>
+      </button>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div class="overlay" data-menu-overlay></div>
+  </div>
+</header>
+    <main class="main">
+      <section class="projects">
+  <div class="container projects__container">
+    <div class="projects__top">
+      <div class="works__title projects__title">
+        <p>Все работы</p>
+        <h3>Мои работы</h3>
+      </div>
+      <div class="portfolio__filter" id="portfolio-filter">
+        <button data-filter="all" class="active btn-reset portfolio__filter-btn">Все</button>
+        <button data-filter="landing" class="btn-reset portfolio__filter-btn">Лендинги</button>
+        <button data-filter="shop" class="btn-reset portfolio__filter-btn">Интернет-магазины</button>
+        <button data-filter="business" class="btn-reset portfolio__filter-btn">Бизнес</button>
+        <button data-filter="portfolio" class="btn-reset portfolio__filter-btn">Портфолио</button>
+      </div>
+      <div class="portfolio__filter-second" id="portfolio-filter-second">
+        <button data-filter="all" class="active btn-reset portfolio__filter-second-btn"
+          id="portfolio-filter-second-btn">Все</button>
+        <div class="portfolio__filter-second-list" id="portfolio-filter-second-list">
+          <button data-filter="all" class="active btn-reset portfolio__filter-second-btn">Все</button>
+          <button data-filter="landing" class="btn-reset portfolio__filter-second-btn">Лендинги</button>
+          <button data-filter="shop" class="btn-reset portfolio__filter-second-btn">Интернет-магазины</button>
+          <button data-filter="business" class="btn-reset portfolio__filter-second-btn">Бизнес</button>
+          <button data-filter="portfolio" class="btn-reset portfolio__filter-second-btn">Портфолио</button>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio portfolio__filter-allWorks">
+      <div class="portfolio__empty" id="portfolio-empty">
+        <p>В этой категории пока нет работ</p>
+      </div>
+      <article class="portfolio__item" data-category="business">
+        <div class="projects__cart">
+          <div class="portfolio__slider">
+            <div class="portfolio__track">
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/confab-slide-1.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/confab-slide-1.jpg" class="portfolio__picture-item"
+                    alt="confab слайд-1">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/confab-slide-2.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/confab-slide-2.jpg" class="portfolio__picture-item"
+                    alt="confab слайд-2">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/confab-slide-3.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/confab-slide-3.jpg" class="portfolio__picture-item"
+                    alt="confab слайд-3">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/confab-slide-4.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/confab-slide-4.jpg" class="portfolio__picture-item"
+                    alt="confab слайд-4">
+                </picture>
+              </article>
+            </div>
+          </div>
+          <div class="portfolio__controls">
+            <button class="btn-reset portfolio__arrow portfolio__arrow--prev">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <div class="portfolio__dots">
+              <button class="portfolio__dot active"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+            </div>
+            <button class="btn-reset portfolio__arrow portfolio__arrow--next">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="projects__cart-text">
+            <div class="projects__cart-name">
+              <h4>Confab</h4>
+              <p>Адаптивный и современный сайт для проведения онлайн-встреч, переговоров и видеоконференций.</p>
+            </div>
+            <a href="https://hoppingup.github.io/Confab/index.html" class="btn-link projects__cart-link">Перейти на
+              сайт
+              <svg class="icon btn-link-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__item" data-category="landing business">
+        <div class="projects__cart">
+          <div class="portfolio__slider">
+            <div class="portfolio__track">
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/finsw-slide-1.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/finsw-slide-1.jpg" class="portfolio__picture-item"
+                    alt="finsweet слайд-1">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/finsw-slide-2.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/finsw-slide-2.jpg" class="portfolio__picture-item"
+                    alt="finsweet слайд-2">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/finsw-slide-3.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/finsw-slide-3.jpg" class="portfolio__picture-item"
+                    alt="finsweet слайд-3">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/finsw-slide-4.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/finsw-slide-4.jpg" class="portfolio__picture-item"
+                    alt="finsweet слайд-4">
+                </picture>
+              </article>
+            </div>
+          </div>
+          <div class="portfolio__controls">
+            <button class="btn-reset portfolio__arrow portfolio__arrow--prev">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <div class="portfolio__dots">
+              <button class="portfolio__dot active"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+            </div>
+            <button class="btn-reset portfolio__arrow portfolio__arrow--next">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="projects__cart-text">
+            <div class="projects__cart-name">
+              <h4>{Finsweet</h4>
+              <p>Современный сайт автосервиса с удобной навигацией и адаптивной версией для любых устройств.</p>
+            </div>
+            <a href="https://hoppingup.github.io/finsw/" class="btn-link projects__cart-link">Перейти на сайт
+              <svg class="icon btn-link-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="portfolio__item" data-category="landing business">
+        <div class="projects__cart">
+          <div class="portfolio__slider">
+            <div class="portfolio__track">
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/createx-slide-1.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/createx-slide-1.jpg" class="portfolio__picture-item"
+                    alt="createx слайд-1">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/createx-slide-2.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/createx-slide-2.jpg" class="portfolio__picture-item"
+                    alt="createx слайд-2">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/createx-slide-3.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/createx-slide-3.jpg" class="portfolio__picture-item"
+                    alt="createx слайд-3">
+                </picture>
+              </article>
+              <article class="portfolio__slide">
+                <picture class="portfolio__slide-picture">
+                  <source srcset="img/slider/createx-slide-4.jpg" type="image/webp">
+                  <img loading="eager" src="img/slider/createx-slide-4.jpg" class="portfolio__picture-item"
+                    alt="createx слайд-4">
+                </picture>
+              </article>
+            </div>
+          </div>
+          <div class="portfolio__controls">
+            <button class="btn-reset portfolio__arrow portfolio__arrow--prev">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <div class="portfolio__dots">
+              <button class="portfolio__dot active"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+              <button class="portfolio__dot"></button>
+            </div>
+            <button class="btn-reset portfolio__arrow portfolio__arrow--next">
+              <svg class="portfolio__controls-btn" width="38" height="16">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="projects__cart-text">
+            <div class="projects__cart-name">
+              <h4>Createx</h4>
+              <p>Образовательная платформа для обучения онлайн с адаптивной версией для компьютеров, планшетов и
+                смартфонов.</p>
+            </div>
+            <a href="https://hoppingup.github.io/Createx-/" class="btn-link projects__cart-link">Перейти на сайт
+              <svg class="icon btn-link-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="cookie-block">
+    <h3 class="cookie-block__title">
+      Мы используем куки для улучшения работы сайта
+    </h3>
+    <p class="cookie-block__descr">
+      Оставаясь на сайте, вы соглашаетесь на использование файлов куки
+    </p>
+    <button class="btn btn-first cookie-block__btn">ок</a>
+  </div>
+  <div class="container footer__container">
+    <div class="footer__text">
+      <p>ⓒ 2026 HoppingUP</p>
+      <svg class="footer-icon">
+        <use xlink:href="img/sprite.svg#hurt"></use>
+      </svg>
+    </div>
+    <div class="footer__social">
+      <a href="https://t.me//AnastasiaKazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#tg"></use>
+        </svg>
+      </a>
+      <a href="https://max.ru/u/f9LHodD0cOKSSGj5bKHPy3VjoHFrGVevlZV0TLtIRawS4B6QmqysZC5YmDY">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#max"></use>
+        </svg>
+      </a>
+      <a href="https://vk.ru/anastasiakazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://github.com/HoppingUP">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#git"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer__up">
+      <a href="#" class="footer__link">Наверх
+        <svg class="footer-arrow">
+          <use xlink:href="img/sprite.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

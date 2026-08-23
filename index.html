@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/icon.svg" type="image/svg+xml">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>HOP · Web Developer</title>
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/Manrope-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container nav__container">
+    <a href="index.html" class="nav__logo">
+      <span>|</span>Hop</a>
+    <nav class="nav menu" data-menu>
+      <ul class="list-reset nav__btns">
+        <li data-menu-item>
+          <a href="about.html" class="nav__btns-item">Обо мне</a>
+        </li>
+        <li data-menu-item>
+          <a href="projects.html" class="nav__btns-item">Проекты</a>
+        </li>
+        <li data-menu-item>
+          <a href="contacts.html" class="nav__btns-item">Контакты</a>
+        </li>
+      </ul>
+      <p class="nav__phone contacts__name">+7 901 109-63-59</p>
+    </nav>
+    <div class="nav__buttons">
+      <button class="btn-reset nav__btn theme-toggle">
+        <svg class="nav__svg logo">
+          <use xlink:href="img/sprite.svg#moon-sun"></use>
+        </svg>
+      </button>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div class="overlay" data-menu-overlay></div>
+  </div>
+</header>
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__wrapper">
+      <div class="hero__info">
+        <h1 class="visually-hidden">Portfolio</h1>
+        <h2 class="hero__title">Я создаю <br><span>веб-сайты </span><br> и веб-приложения</h2>
+        <p class="hero__text">
+          HTML, CSS, JavaScript и современные технологии — для быстрых и качественных решений
+        </p>
+      </div>
+      <a href="projects.html" class="btn btn-first">Смотреть проекты
+        <svg class="icon btn-first-icon">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </a>
+      <ul class="list-reset hero__social">
+        <li class="hero__social-item">
+          <a href="https://github.com/HoppingUP">
+            <svg class="icon hero__social-icon">
+              <use xlink:href="img/sprite.svg#git"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero__social-item">
+          <a href="https://t.me//AnastasiaKazakova056">
+            <svg class="icon hero__social-icon">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero__social-item">
+          <a href="https://vk.ru/anastasiakazakova056">
+            <svg class="icon hero__social-icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="hero__social-item">
+          <a href="https://max.ru/u/f9LHodD0cOKSSGj5bKHPy3VjoHFrGVevlZV0TLtIRawS4B6QmqysZC5YmDY">
+            <svg class="icon hero__social-icon">
+              <use xlink:href="img/sprite.svg#max"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="hero__bg"> -->
+    <picture class="hero__picture">
+      <source srcset="img/laptop.png" type="image/webp">
+      <img loading="eager" src="img/laptop.png" class="hero__img" alt="laptop">
+    </picture>
+    <!-- </div> -->
+  </div>
+</section>
+      <section class="works">
+  <div class="container works__container">
+    <div class="works__header">
+      <div class="works__title title">
+        <p>Проекты</p>
+        <h3>Избранные работы</h3>
+      </div>
+      <div class="works__all">
+        <a href="projects.html" class="btn-link">Смотреть все проекты
+          <svg class="icon btn-link-icon">
+            <use xlink:href="img/sprite.svg#arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="works__carts">
+      <div class="works__cart">
+        <picture class="works__picture">
+          <source srcset="img/web-site.jpg" type="image/webp">
+          <img loading="eager" src="img/web-site.jpg" class="works__img" alt="laptop">
+        </picture>
+        <div class="works__cart-skills">
+          <div class="works__cart-skill">
+            <p>HTML</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>JS</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>WordPress</p>
+          </div>
+        </div>
+        <div class="works__cart-item">
+          <div class="works__cart-title">
+            <h4>Confab</h4>
+          </div>
+          <div class="works__cart-text">
+            <p>Адаптивный сайт для проведения видеоконференций</p>
+            <a href="https://hoppingup.github.io/Confab/" class="works__cart-link">
+              <svg class="icon works__cart-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="works__cart">
+        <picture class="works__picture">
+          <source srcset="img/web-site-2.jpg" type="image/webp">
+          <img loading="eager" src="img/web-site-2.jpg" class="works__img" alt="laptop">
+        </picture>
+        <div class="works__cart-skills">
+          <div class="works__cart-skill">
+            <p>HTML</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>CSS</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>JS</p>
+          </div>
+        </div>
+        <div class="works__cart-item">
+          <div class="works__cart-title">
+            <h4>{Finsweet</h4>
+          </div>
+          <div class="works__cart-text">
+            <p>Сайт об обслуживании и ремонте автомобилей</p>
+            <a href="https://hoppingup.github.io/finsw/" class="works__cart-link">
+              <svg class="icon works__cart-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="works__cart">
+        <picture class="works__picture">
+          <source srcset="img/web-site-3.jpg" type="image/webp">
+          <img loading="eager" src="img/web-site-3.jpg" class="works__img" alt="web-site">
+        </picture>
+        <div class="works__cart-skills">
+          <div class="works__cart-skill">
+            <p>HTML</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>CSS</p>
+          </div>
+          <div class="works__cart-skill">
+            <p>JS</p>
+          </div>
+        </div>
+        <div class="works__cart-item">
+          <div class="works__cart-title">
+            <h4>Createx</h4>
+          </div>
+          <div class="works__cart-text">
+            <p>Современная платформа для онлайн-обучения</p>
+            <a href="https://hoppingup.github.io/Createx-/" class="works__cart-link">
+              <svg class="icon works__cart-icon">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__top">
+      <div class="works__title contacts__title">
+        <p>Связаться со мной</p>
+        <h3>Давайте создадим что-то интересное!</h3>
+        <span class="contacts__info">Есть идея или проект? Напишите мне, и я с радостью помогу!</span>
+      </div>
+      <div class="contacts__links">
+        <ul class="list-reset contacts__list">
+          <li class="contacts__item">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#letter"></use>
+            </svg>
+            <span class="contacts__name" id="name1">anastasiakazakova056@gmail.com</span>
+            <button class="btn-reset contacts__btn-copy copy" data-target="name1">
+              <svg class="contacts__icon-btn">
+                <use xlink:href="img/sprite.svg#copy"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="contacts__item">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#tg"></use>
+            </svg>
+            <span class="contacts__name" id="name2">@AnastasiaKazakova056</span>
+            <button class="btn-reset contacts__btn-copy copy" data-target="name2">
+              <svg class="contacts__icon-btn">
+                <use xlink:href="img/sprite.svg#copy"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="contacts__item">
+            <svg class="contacts__icon">
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+            <span class="contacts__name" id="name3">@AnastasiaKazakova056</span>
+            <button class="btn-reset contacts__btn-copy copy" data-target="name3">
+              <svg class="contacts__icon-btn">
+                <use xlink:href="img/sprite.svg#copy"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contacts__bottom">
+      <div class="contacts__wrapper">
+        <form id="contact-form">
+          <div class="contacts__form">
+            <h4>Оставить заявку</h4>
+            <div class="contacts__inputs-first">
+              <input type="text" name="name" class="contacts__input-first" placeholder="Ваше имя">
+              <input type="email" name="email" class="contacts__input-first" placeholder="E-mail">
+            </div>
+            <input type="text" name="subject" class="contacts__input-second" placeholder="Тема">
+            <textarea type="input" name="message" class="contacts__input-third" placeholder="Сообщение"></textarea>
+            <button type="submit" class="btn btn-first contacts__btn-form">Отправить сообщение</button>
+        </form>
+      </div>
+      <source srcset="img/form.png" type="image/webp">
+      <img loading="eager" src="img/form.png" class="contacts-img" alt="laptop">
+    </div>
+  </div>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="cookie-block">
+    <h3 class="cookie-block__title">
+      Мы используем куки для улучшения работы сайта
+    </h3>
+    <p class="cookie-block__descr">
+      Оставаясь на сайте, вы соглашаетесь на использование файлов куки
+    </p>
+    <button class="btn btn-first cookie-block__btn">ок</a>
+  </div>
+  <div class="container footer__container">
+    <div class="footer__text">
+      <p>ⓒ 2026 HoppingUP</p>
+      <svg class="footer-icon">
+        <use xlink:href="img/sprite.svg#hurt"></use>
+      </svg>
+    </div>
+    <div class="footer__social">
+      <a href="https://t.me//AnastasiaKazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#tg"></use>
+        </svg>
+      </a>
+      <a href="https://max.ru/u/f9LHodD0cOKSSGj5bKHPy3VjoHFrGVevlZV0TLtIRawS4B6QmqysZC5YmDY">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#max"></use>
+        </svg>
+      </a>
+      <a href="https://vk.ru/anastasiakazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://github.com/HoppingUP">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#git"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer__up">
+      <a href="#" class="footer__link">Наверх
+        <svg class="footer-arrow">
+          <use xlink:href="img/sprite.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>

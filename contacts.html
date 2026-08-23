@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/svg/icon.svg" type="image/svg+xml">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>HOP · Web Developer</title>
+  <link rel="preload" href="fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- <link rel="preload" href="fonts/Manrope-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container nav__container">
+    <a href="index.html" class="nav__logo">
+      <span>|</span>Hop</a>
+    <nav class="nav menu" data-menu>
+      <ul class="list-reset nav__btns">
+        <li data-menu-item>
+          <a href="about.html" class="nav__btns-item">Обо мне</a>
+        </li>
+        <li data-menu-item>
+          <a href="projects.html" class="nav__btns-item">Проекты</a>
+        </li>
+        <li data-menu-item>
+          <a href="contacts.html" class="nav__btns-item">Контакты</a>
+        </li>
+      </ul>
+      <p class="nav__phone contacts__name">+7 901 109-63-59</p>
+    </nav>
+    <div class="nav__buttons">
+      <button class="btn-reset nav__btn theme-toggle">
+        <svg class="nav__svg logo">
+          <use xlink:href="img/sprite.svg#moon-sun"></use>
+        </svg>
+      </button>
+      <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <div class="overlay" data-menu-overlay></div>
+  </div>
+</header>
+    <main class="main">
+      <section class="info">
+  <div class="container info__container">
+    <div class="info__wrapper">
+      <div class="info__wrapper-first">
+        <div class="works__title contacts__title info__title">
+          <p>Контакты</p>
+          <h3>Давайте создадим что-то <span>интересное!</span></h3>
+        </div>
+        <div class="info__num">
+          <ul class="list-reset contacts__list">
+            <li class="contacts__item">
+              <svg class="contacts__icon">
+                <use xlink:href="img/sprite.svg#letter"></use>
+              </svg>
+              <span class="contacts__name" id="name1">anastasiakazakova056@gmail.com</span>
+              <button class="btn-reset contacts__btn-copy copy" data-target="name1">
+                <svg class="contacts__icon-btn">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              <span class="contacts__name" id="name3">+7 901 109-63-59</span>
+              <button class="btn-reset contacts__btn-copy copy" data-target="name3">
+                <svg class="contacts__icon-btn">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon">
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg>
+              <span class="contacts__name" id="name2">@AnastasiaKazakova056</span>
+              <button class="btn-reset contacts__btn-copy copy" data-target="name2">
+                <svg class="contacts__icon-btn">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="contacts__item">
+              <svg class="contacts__icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+              <span class="contacts__name" id="name3">@AnastasiaKazakova056</span>
+              <button class="btn-reset contacts__btn-copy copy" data-target="name3">
+                <svg class="contacts__icon-btn">
+                  <use xlink:href="img/sprite.svg#copy"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <picture>
+        <source srcset="img/letter.png" type="image/webp">
+        <img loading="eager" src="img/letter.png" class="image info__img" alt="letter">
+      </picture>
+    </div>
+    <form id="contact-form">
+      <div class="info__form">
+        <h4>Оставить заявку</h4>
+        <div class="contacts__inputs-first">
+          <input type="text" name="name" class="contacts__input-first" placeholder="Ваше имя">
+          <input type="email" name="email" class="contacts__input-first" placeholder="E-mail">
+        </div>
+        <input type="text" name="subject" class="contacts__input-second" placeholder="Тема">
+        <textarea type="input" name="message" class="contacts__input-third" placeholder="Сообщение"></textarea>
+        <button type="submit" class="btn btn-first contacts__btn-form">Отправить сообщение</button>
+    </form>
+  </div>
+</section>
+    </main>
+    <footer class="footer">
+  <div class="cookie-block">
+    <h3 class="cookie-block__title">
+      Мы используем куки для улучшения работы сайта
+    </h3>
+    <p class="cookie-block__descr">
+      Оставаясь на сайте, вы соглашаетесь на использование файлов куки
+    </p>
+    <button class="btn btn-first cookie-block__btn">ок</a>
+  </div>
+  <div class="container footer__container">
+    <div class="footer__text">
+      <p>ⓒ 2026 HoppingUP</p>
+      <svg class="footer-icon">
+        <use xlink:href="img/sprite.svg#hurt"></use>
+      </svg>
+    </div>
+    <div class="footer__social">
+      <a href="https://t.me//AnastasiaKazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#tg"></use>
+        </svg>
+      </a>
+      <a href="https://max.ru/u/f9LHodD0cOKSSGj5bKHPy3VjoHFrGVevlZV0TLtIRawS4B6QmqysZC5YmDY">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#max"></use>
+        </svg>
+      </a>
+      <a href="https://vk.ru/anastasiakazakova056">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#vk"></use>
+        </svg>
+      </a>
+      <a href="https://github.com/HoppingUP">
+        <svg class="footer__social-icon" width="32" height="32">
+          <use xlink:href="img/sprite.svg#git"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="footer__up">
+      <a href="#" class="footer__link">Наверх
+        <svg class="footer-arrow">
+          <use xlink:href="img/sprite.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+  </div>
+</body>
+
+</html>
